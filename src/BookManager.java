@@ -54,7 +54,7 @@ public class BookManager {
         try (Connection conn = DbConnect.getConnection()){
             System.out.print("Enter book Id ");
             int book_id = sc.nextInt();
-            String sql = "DELETE FROM books WHERE id = ?";
+            String sql = "DELETE FROM books WHERE book_id = ?";
             PreparedStatement stmt = conn.prepareStatement(sql);
             stmt.setInt(1,book_id);
             int rows = stmt.executeUpdate();
