@@ -1,8 +1,3 @@
-DROP TABLE IF EXISTS borrowed_books;
-DROP TABLE IF EXISTS books;
-DROP TABLE IF EXISTS authors;
-DROP TABLE IF EXISTS genres;
-DROP TABLE IF EXISTS users;
 
 -- Users Table
 CREATE TABLE IF NOT EXISTS users (
